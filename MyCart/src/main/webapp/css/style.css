@@ -1,0 +1,250 @@
+
+
+
+.blue {
+    background: #41029f !important;
+}
+.message-container {
+    width: 50%; /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+    .message-container {
+        width: 90%; /* Adjust this value for smaller screens */
+    }
+}
+.card{
+	
+}
+ 
+ /*css for prouct cart */
+    .product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-height: 200px;
+    object-fit: contain;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+   /* background-color: #fafafa;*/
+}
+
+.product-card .card-body {
+    flex: 1 1 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card .card-body .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.product-card .card-body .card-text {
+    font-size: 0.9em;
+    color: #666;
+    flex: 1 1 auto;
+}
+
+.product-card .card-footer {
+    flex-shrink: 0;
+    padding: 10px 16px;
+  /*  background-color: #f8f8f8;*/
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card .card-footer .btn {
+    font-size: 0.9em;
+    padding: 8px 12px;
+}
+
+.product-card .card-footer .btn.blue {
+    background-color: #007bff;
+    border: none;
+}
+
+.product-card .card-footer .btn.blue:hover {
+    background-color: #0056b3;
+}
+
+.product-card .card-footer .btn-outline-primary {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.product-card .card-footer .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.product-card .card-footer .discount-label {
+    font-size: 0.8em;
+    color: #888;
+}
+       
+
+
+
+
+/* Custom styles for the category dropdown */
+.navbar .dropdown-menu {
+    background-color: #343a40; /* Change dropdown background color */
+    border: none; /* Remove border */
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: white; /* Change text color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #495057; /* Background color on hover */
+}
+
+/* Custom styles for the login dropdown */
+.navbar .nav-item .dropdown-menu {
+    background-color: #343a40; /* Change dropdown background color */
+    border: none; /* Remove border */
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: white; /* Change text color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #495057; /* Background color on hover */
+}
+
+/* Custom styles for login and register buttons */
+.navbar .nav-item .nav-link {
+    color: white; /* Change link text color */
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #ffc107; /* Change text color on hover */
+}
+
+.navbar .nav-item .btn-danger {
+    background-color: #dc3545; /* Change button background color */
+    color: white; /* Change button text color */
+}
+
+.navbar .nav-item .btn-danger:hover {
+    background-color: #c82333; /* Darken button background color on hover */
+    color: white; /* Ensure text color remains white */
+}
+
+
+.admin .card {
+    border: 1px solid black;
+    transition: border-color 0.3s ease;
+}
+
+.admin .card:hover {
+    background:#eee;
+    border-color: #41029f; /* Highlight border on hover */
+    cursor: pointer;
+}
+
+/* Modal styling */
+.modal-header.blue {
+    background-color: #41029f;
+    color: white;
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.btn-custom {
+    background-color: #41029f;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #5d0dff; /* Darker shade for hover effect */
+}
+
+
+/* Ensure equal height for cards */
+/*.row {
+    display: flex;
+    flex-wrap: wrap;
+}*/
+/*
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    margin-bottom: 20px;
+}
+*/
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+.discount-label {
+    font-size: 10px !important;
+    font-style: italic !important;
+    color: white;
+}
+
+.product-card:hover {
+    background: #e2e2e2;
+    cursor: pointer;
+}
+.table th {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100px; /* Adjust the width as needed */
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+.table td {
+    word-wrap: break-word;
+    max-width: 150px; /* Adjust the width as needed */
+}
+.table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Adjust the width as needed */
+}
+
+.success-message {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .success-icon {
+            font-size: 50px;
+            color: #28a745; /* Bootstrap success color */
+        }
